@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <body>
+      <h1>Hello from Profile Page! [EJS]</h1>
+      <h1>Name fetched : <%= person %></h1>
+      <h2>Job Fetched: <%= data.job %></h2>
+      <h2>City Fetched: <%= data.city %></h2>
+      <h2>Hobbies:</h2>
+      <ul>
+        <% data.hobbies.forEach(function(item){ %>
+        <li><%= item %></li>
+        <% }); %>
+      </ul>
+    </body>
+  </head>
+</html>
