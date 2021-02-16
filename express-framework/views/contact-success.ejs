@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <body>
+      <%- include ('partials/nav.ejs') -%>
+      <h1>Contact Success Page!</h1>
+      <h2>
+        You contacted: <%= formData.who %> from the <%= formData.department %>
+        department
+      </h2>
+      <h2>We will contact you on <%= formData.email %>.</h2>
+    </body>
+  </head>
+</html>
