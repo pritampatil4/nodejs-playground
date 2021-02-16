@@ -2,8 +2,22 @@
 <html>
   <head>
     <body>
-        <% include partials/nav.ejs %> 
+      <%- include ('partials/nav.ejs') -%>
       <h1>Hello from Contact Page!</h1>
+      <form id="contact-form">
+        <label for="who"> Who do you want to contact</label>
+        <input type="text" name="who" />
+
+        <label for="department"> Which department?</label>
+        <input type="text" name="department" />
+
+        <label for="email"> Your email</label>
+        <input type="email" name="email" />
+
+        <input type="submit" value="submit" />
+      </form>
+      <h2>Name: <%= qs.who %></h2>
+      <h2>department: <%=qs.department %></h2>
     </body>
   </head>
 </html>
